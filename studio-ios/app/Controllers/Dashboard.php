@@ -238,6 +238,8 @@ class Dashboard {
         
         $nome_servico = [];
 
+    if (is_array($nome_servico) || is_object($nome_servico))
+
         foreach($choices as $choice) {
             $nome_servico[$choice['value']] = $choice['text'];
         }
