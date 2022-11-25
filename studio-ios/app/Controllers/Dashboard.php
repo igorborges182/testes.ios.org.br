@@ -197,7 +197,7 @@ class Dashboard {
         $filters['faixa_renda'] = $this->get_faixa_renda();
         $filters['servico_social'] = $this->get_servico_social();
         $filters['encaminhamento_social'] = $this->get_encaminhamento_social();
-        $filters['nome_servico'] = $this->get_nome_servico();
+        //$filters['nome_servico'] = $this->get_nome_servico();
 
         return $filters;
     }
@@ -231,7 +231,7 @@ class Dashboard {
         return $encaminhamento_social;
     }
 
-    private function get_nome_servico()
+   /* private function get_nome_servico()
     {
         $field_data = \GFAPI::get_field($this->form_id, '1195');
         $choices = $field_data->choices;
@@ -243,7 +243,7 @@ class Dashboard {
         }
 
         return $nome_servico;
-    }
+    } */
 
     private function get_cronograma_vacinal()
     {
