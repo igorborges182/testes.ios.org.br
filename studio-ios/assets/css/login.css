@@ -1,0 +1,75 @@
+.login {
+    background-image: url('../images/background-login.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login h1 a {
+    width: 132px;
+    height: 74px;
+    background-size: 100%;
+    margin-bottom: 16px;
+}
+
+.login #nav a,
+.login #backtoblog a, 
+.login .privacy-policy-link {
+    color: #fff;
+}
+
+.login #nav a:hover,
+.login #backtoblog a:hover, 
+.login .privacy-policy-link:hover {
+    color: #b7b7b7;
+}
+
+.login #loginform {
+    border: 0;
+    border-radius: 10px;
+    margin-top: 0;
+    padding: 32px;
+}
+
+.login #loginform label {
+    color: #49176D;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.login #loginform #user_login,
+.login #loginform #user_pass {
+    font-size: 13px;
+}
+
+.login #loginform .forgetmenot {
+    line-height: 40px;
+}
+
+.login #loginform .forgetmenot label {
+    font-size: 12px;
+    line-height: 20px;
+    color: #404040;
+    text-transform: none;
+}
+
+.login #loginform .submit .button-primary,
+.login #lostpasswordform .submit .button-primary {
+    border-radius: 4px;
+    background-color: #F76024;
+    color: #fff;
+    border: 0;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px 23px;
+}
+
+.login #loginform form .input, 
+.login #loginform input[type=password], 
+.login #loginform input[type=text] {
+    border-color: #707070;
+    border-radius: 5px;
+    color: #1A1718;
+}

@@ -1,0 +1,587 @@
+/* Courses for Page Para Você */
+.bxcourses {
+    max-width: 857px !important;
+    border-radius: 10px;
+    padding: 32px;
+    margin: 0 auto 32px;    
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.157);
+    background-color: white;
+		display: flow-root;
+}
+
+.bxcourses .line.header {
+	width: 100%;
+	margin-bottom: 16px;
+	display: flex;
+	flex-direction: row;
+}
+
+.bxcourses .line.header img {
+	width: 50px;
+	height: 50px;
+	margin: 0 16px 0 0;
+}
+
+.bxcourses .line.header h2 {
+	padding: 0;
+	margin: 16px 0 0 0;
+	color: #f76024;
+	font-size: 20px;
+	font-family: 'futura-pt-bold';
+}
+
+.bxcourses .ementa {
+	font-family: 'Roboto';
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.infos {
+	display: block;
+	width: 100%;
+	display: flex;
+	margin: 32px 0 0;
+}
+
+.col-1, .col-2 {
+	width: 25%;
+}
+
+.col-3 {
+	width: 50%;
+}
+
+.infos h4 {
+	font-family: 'futura-pt-bold' !important;
+	font-size: 16px !important;
+	color: black !important;
+	margin: 0 0 10px !important;
+}
+
+.infos .colunas {
+	display: flex;
+	flex-direction: row;
+}
+
+.infos .colunas img {
+	width: auto !important;
+	height: 21px !important;
+	margin-right: 10px;
+}
+
+.infos .colunas p {
+	font: bold 14px 'Roboto';
+	margin: 2px 0 0;
+}
+
+.infos .col-3 .colunas {
+	width: 30%;
+	float: left;
+}
+
+.classroom h4{
+  padding: 0 !important;
+  margin: 32px 0 !important;
+  color: #f76024 !important;
+  font-size: 20px !important;
+  font-family: 'futura-pt-bold' !important;
+}
+
+.classroom .more-cols {
+	display: block;
+}
+
+.classroom .cols {
+	display: block;
+	float: left;
+	width: 33.3333%
+}
+
+.classroom span {
+	font: bold 14px 'Roboto';
+	margin-bottom: 14px;
+}
+
+.classroom .cols address {
+	font: normal 14px 'Roboto' !important;
+	width: 270px;
+	padding-right: 20px;
+}
+
+.formulario_captura_lead form {
+    display: flex;
+    position: relative;
+}
+
+.formulario_captura_lead div.ginput_container_name span {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.formulario_captura_lead form .gform_body ul {
+    display: flex;
+    flex: 1;
+}
+
+.formulario_captura_lead form .gform_body {
+    flex: 1;
+}
+
+.formulario_captura_lead form .gform_footer.top_label {
+    flex: 0;
+}
+
+.formulario_captura_lead form .gform_body ul li {
+    width: 100%;
+}
+
+.formulario_captura_lead form .gform_body ul li input {
+    width: 100% !important;
+    font-family: "Roboto", Sans-serif !important;
+    font-size: 12px !important;
+    border-radius: 6px;
+    padding: 12px 12px 13px 12px !important;
+    font-weight: 500;
+    margin-bottom: 0 !important;
+}
+
+.formulario_captura_lead form input[type="submit"] {
+    top: 7px;
+    position: relative;
+    text-transform: inherit;
+    font-size: 12px !important;
+    font-weight: 500;
+}
+.formulario_captura_lead form label, .formulario_captura_lead form .gfield_required {
+    color: #49176d;
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    font-size: 10.5px !important;
+    letter-spacing: 0.5px !important;
+    font-family: "Roboto", Sans-serif !important;
+    margin-top: 0 !important;
+}
+
+.formulario_captura_lead {
+    width: 100%;
+}
+
+.formulario_captura_lead .gform_wrapper .ginput_container {
+    margin: 0 !important;
+}
+
+.formulario_captura_lead .gform_wrapper {
+    margin: 0;
+}
+
+.formulario_captura_lead .validation_error {
+    position: absolute;
+    top: -15px;
+    border: 0 !important;
+    text-align: left !important;
+    display: none;
+}
+
+.formulario_captura_lead .gform_wrapper li.gfield {
+    background: inherit !important;
+    border: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-right: 16px !important;
+}
+
+.formulario_captura_lead .validation_message {
+	padding-top: 0px !important;
+    margin-top: 5px !important;
+}
+
+.formulario_captura_lead img.gform_ajax_spinner {
+    border: 0 !important;
+    top: 10px;
+    position: relative;
+}
+
+h3.msg_indisponivel {
+    margin: 3rem auto 3rem !important;
+}
+
+@media (max-width: 768px) {
+	.formulario_captura_lead form .gform_body ul {
+		flex-direction: column;
+	}
+
+	.formulario_captura_lead form {
+		flex-direction: column;
+	}
+
+	.formulario_captura_lead {
+		width: 100%;
+	}
+
+	.formulario_captura_lead .gform_wrapper li.gfield {
+		padding-right: 0 !important;
+	}
+}
+
+/* Owl Carrousel Courses */
+.container-owl {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+}
+.owl-carousel .owl-stage-outer {
+	height: 420px !important;
+	padding: 30px 0;
+}
+.owl-carousel .card{
+    width: 310px;
+    height: 330px;
+	padding: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px #29174129;
+    border-radius: 10px;
+	margin: 0 30px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.owl-carousel .card img {
+    width: 50px !important;
+    max-width: unset !important;
+    height: unset !important;
+}
+
+.owl-carousel .card h3 {
+    margin: 24px 0 8px;
+    width: 244px;
+    font:normal 16px 'futura-pt-bold';
+    text-align: left;       
+    color: #D9531E; 
+    height: 43px !important;
+    display: grid;
+}
+
+.owl-carousel .card p{
+    margin-bottom: 24px;
+    font: normal 14px/20px 'roboto';
+    text-align: left;
+    letter-spacing: 0px;
+    color: #404040;
+    opacity: 1;
+    height: 100px !important;
+    display: grid;
+}
+
+.owl-carousel .card a{
+    font: bold 13px/20px 'roboto';
+    text-align: left;
+    color: #D9531E;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.owl-dots {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 25px;
+}
+
+.owl-carousel button.owl-dot {
+    display: block;
+    background: transparent !important;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    border: 1px solid #d9531e !important;
+    margin: 0 5px;
+}
+
+.owl-carousel button.owl-dot:focus {
+    outline: 0 !important;
+}
+
+.owl-carousel button.owl-dot.active {
+    background: #d9531e !important;
+}
+
+/* Repeater */
+
+.gform_wrapper li.gfield fieldset {
+	border: none !important;
+}
+
+.gform_wrapper li.gfield fieldset legend.gfield_label {
+	padding-left: 0 !important;
+	font-weight: 700;
+  	font-size: 1.25em;
+	color: #f76024 !important;
+	font-family: 'futura-pt-bold';
+}
+
+.gfield_repeater_item .gfield_repeater_cell:nth-child(1),
+.gfield_repeater_item .gfield_repeater_cell:nth-child(3),
+.gfield_repeater_item .gfield_repeater_cell:nth-child(5),
+.gfield_repeater_item .gfield_repeater_cell:nth-child(7){
+	width: 50% !important;
+	float: left !important;
+}
+
+.gfield_repeater_item .gfield_repeater_cell:nth-child(2),
+.gfield_repeater_item .gfield_repeater_cell:nth-child(4),
+.gfield_repeater_item .gfield_repeater_cell:nth-child(6),
+.gfield_repeater_item .gfield_repeater_cell:nth-child(8){
+	width: 50% !important;
+	float: left !important;
+}
+
+.gfield_repeater_item .gfield_repeater_cell:nth-child(10) {
+	width: 100% !important;
+}
+
+.gfield_repeater_item .gfield_repeater_cell:nth-child(9) .ginput_container_checkbox .gfield_checkbox {
+	display: flex
+}
+
+.pp-contact-form input[type=text] {
+    width: 96% !important;
+}
+
+.gfield_repeater_cell {
+	padding-top: 0 !important;
+	margin: 15px 0 !important
+}
+
+#field_1_5000 > div > fieldset > div > div > div:nth-child(5) > div {
+	width: 96%;
+}
+
+.gfield_repeater_item .gfield_repeater_cell .ginput_container_select span{
+	width: 96% !important;
+	display: block !important;
+}
+
+.gfield_repeater_item .gfield_repeater_cell .ginput_container_select span select {
+	width: 100% !important;
+}
+
+.gfield_repeater_item .gfield_repeater_cell .ginput_container_radio .gfield_radio {
+	display: flex !important;
+}
+
+.gfield_repeater_buttons .add_repeater_item_text, 
+.gfield_repeater_buttons .remove_repeater_item_text {
+	width: 220px !important;
+	height: 40px !important;
+	background: #F76024 !important;
+	border-radius: 4px !important;
+	text-align: center !important;
+	font: normal 13px/20px 'Roboto'  !important;
+	letter-spacing: 0px  !important;
+	color: #FFFFFF  !important;
+	border: 0 !important;
+	padding: 10px 0 !important;
+	text-shadow: unset !important;
+}
+
+
+
+/* Responsive */
+@media (max-width: 576px) {
+	.bxcourses .line.header {
+		display: block;
+	}
+	.infos {
+		display: block;
+		margin-bottom: 32px
+	}
+	.col-1, .col-2, .col-3 {
+		width: 100% !important;
+		margin-bottom: 32px
+	}
+	
+	.classroom {
+		margin-top: 64px !important;
+	}
+	
+	.classroom .more-cols {
+		display: block
+	}
+	
+	.classroom .cols {
+		display: block;
+		width: 100%;
+	}
+	
+	/* Repeater */
+
+	.gfield_repeater_item .gfield_repeater_cell:nth-child(1),
+	.gfield_repeater_item .gfield_repeater_cell:nth-child(3),
+	.gfield_repeater_item .gfield_repeater_cell:nth-child(5),
+	.gfield_repeater_item .gfield_repeater_cell:nth-child(7){
+		width: 100% !important;
+		float: left !important;
+	}
+
+	.gfield_repeater_item .gfield_repeater_cell:nth-child(2),
+	.gfield_repeater_item .gfield_repeater_cell:nth-child(4),
+	.gfield_repeater_item .gfield_repeater_cell:nth-child(6),
+	.gfield_repeater_item .gfield_repeater_cell:nth-child(8){
+		width: 100% !important;
+		float: left !important;
+	}
+
+	.gfield_repeater_item .gfield_repeater_cell:nth-child(9) .ginput_container_checkbox .gfield_checkbox {
+		display: block;
+	}
+
+}
+
+/* Woocommerce Pages css */
+.single-product .ios-header,
+.woocommerce-page .ios-header {
+    background-color: #49176D !important;
+} 
+
+.woocommerce-page main .product_title,
+.woocommerce-page main .entry-title {
+	color: #000;
+}
+
+.woocommerce-page main select {
+	background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+	background-color: transparent;
+    background-position: calc(100% - 8px) center;
+    -moz-appearance:none !important;
+    -webkit-appearance: none !important; 
+    appearance: none !important;
+	padding: 8px 32px 8px 8px;
+}
+
+.woocommerce-product-gallery img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.woocommerce-page main .color-accent, 
+.woocommerce-page main .color-accent-hover:hover, 
+.woocommerce-page main .color-accent-hover:focus, 
+.woocommerce-page main :root .has-accent-color, 
+.woocommerce-page main .has-drop-cap:not(:focus):first-letter, 
+.woocommerce-page main .wp-block-button.is-style-outline, 
+.woocommerce-page main a {
+	color: #0194D3 !important;
+}
+
+.woocommerce-page main button, 
+.woocommerce-page main .button, 
+.woocommerce-page main .faux-button, 
+.woocommerce-page main .wp-block-button__link, 
+.woocommerce-page main .wp-block-file .wp-block-file__button, 
+.woocommerce-page main input[type="button"], 
+.woocommerce-page main input[type="reset"], 
+.woocommerce-page main input[type="submit"], 
+.woocommerce-page main .bg-accent, 
+.woocommerce-page main .bg-accent-hover:hover, 
+.woocommerce-page main .bg-accent-hover:focus, 
+.woocommerce-page main :root .has-accent-background-color, 
+.woocommerce-page main .comment-reply-link {
+	background-color: #49176D !important;
+	color: #fff !important;
+}
+
+.woocommerce-page main .onsale {
+	background: #49176D;
+}
+
+.woocommerce-tabs ul li.active a {
+	box-shadow: 0 2px 0 #F76024 !important;
+}
+
+/* Woocommerce - Oculta texto /mês dos produtos subscriptions */
+.subscription-details {
+	display: none !important;
+}
+
+/* Woocommerce shop cards */
+.woocommerce .products .product {
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 16%);
+	padding: 12px 6px !important;
+}
+
+.woocommerce .products .product .star-rating,
+.woocommerce .products .product .add_to_cart_button,
+.woocommerce .products .product .woocommerce-loop-product__link {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.woocommerce .products .product p {
+	width: 100%;
+}
+
+.woocommerce .checkout div#pagseguro-credit-card-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.woocommerce .checkout div#pagseguro-credit-card-form p {
+    width: 100%;
+}
+
+.woocommerce .checkout fieldset#wc-pagseguro_assinaturas-cc-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce .checkout fieldset#wc-pagseguro_assinaturas-cc-form p {
+    width: 100%;
+}
+
+.woocommerce .checkout fieldset#wc-pagseguro_assinaturas-cc-form p input {
+    width: 100% !important;
+}
+
+.woocommerce .checkout .woocommerce-error li strong {
+    min-width: 125px;
+}
+
+.woocommerce-checkout {
+    margin-bottom: 25px;
+}
+
+.disabled {
+    color: -internal-light-dark(graytext, rgb(170, 170, 170));
+    opacity: 0.7;
+    border-color: rgba(118, 118, 118, 0.3);
+}
+
+.enabled {
+    display: block !important;
+}
+
+.autorizo label {
+    text-transform: none !important;
+}
+
+.curso_indisponivel {
+    position: relative !important;
+    left: 0 !important;
+    visibility: visible !important;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #000 !important;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #000 !important;
+}
