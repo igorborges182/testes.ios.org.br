@@ -243,8 +243,9 @@ class Dashboard {
         foreach($choices as $choice) {
             $nome_servico[$choice['value']] = $choice['text'];
         }
-    }
+    
         return $nome_servico;
+    }
     }
 
     private function get_cronograma_vacinal()
