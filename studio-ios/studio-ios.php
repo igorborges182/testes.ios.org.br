@@ -1388,3 +1388,17 @@ add_filter( 'gform_field_validation_13_121', function ( $result, $value, $form, 
   
     return $result;
 }, 10, 4 );
+
+//function para bloquear os caracteres
+add_filter( 'gform_field_validation_27_23', function( $result, $value, $form, $field ) {
+
+    if ( strpos( $field->cssClass, 'require_alpha_num' ) !== false && ! ctype_alnum( $value ) ) {
+ 
+       $result['is_valid'] = false;
+       $result['message'] = 'Por favor utilize apenas números e letras';
+ 
+    }
+ 
+    return $result;
+ 
+ }, 10, 4 );
