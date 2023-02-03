@@ -1391,21 +1391,11 @@ add_filter( 'gform_field_validation_13_121', function ( $result, $value, $form, 
 
 //function para bloquear os caracteres
 
-add_filter( 'gform_field_validation_27_23', 'gf_validate_name', 10, 4 );
-
-function gf_validate_name( $result, $value, $form, $field ) {
-	if ( $field->type != 'name' ) {
-		return $result;
-	}
-	GFCommon::log_debug( __METHOD__ . '(): Name values => ' . print_r( $value, true ) );
-
-	if ( $result['is_valid'] ) {
-		foreach ( $value as $input ) {
-			if ( ! empty ( $input ) && ! preg_match( '/^[\p{L} ]+$/u', $input ) ) {
-				$result['is_valid'] = false;
-				$result['message'] = 'Only letters!';
-			}
-		}
+add_filter( 'gform_field_validation_27_23', function( $result, $value, $form, $field ) {
+	$pattern = "/^[a-zA-Z ]*$/"; 
+	if ( strpos( $field->cssClass, 'letras_espacos' ) !== false && ! preg_match( $pattern, $value ) ) {
+		$result['is_valid'] = false;
+		$result['message'] = 'Não é permitido usar caracteres especiais';
 	}
 	return $result;
-}
+}, 10, 4 );
