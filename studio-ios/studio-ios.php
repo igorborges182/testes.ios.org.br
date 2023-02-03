@@ -1400,3 +1400,12 @@ add_filter( 'gform_field_validation_13_23', function( $result, $value, $form, $f
 	return $result;
 }, 10, 4 );
 
+//function para juntar os números
+
+add_filter( 'gform_save_field_value_13_47', 'aceita_apenas_numeros', 10, 4 );
+function aceita_apenas_numeros( $value, $lead, $field, $form ) {
+	GFCommon::log_debug( __METHOD__ . '(): Original value => ' . $value );
+	$value = preg_replace("/[^0-9]/", "", $value );
+	GFCommon::log_debug( __METHOD__ . '(): Modified value => ' . $value );
+	return $value;
+}
