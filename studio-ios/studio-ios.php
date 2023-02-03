@@ -1415,7 +1415,7 @@ function aceita_apenas_numeros( $value, $lead, $field, $form ) {
 add_filter( 'gform_save_field_value_13_24', 'consertaespecial', 10, 4 );
 function consertaespecial( $value, $lead, $field, $form ) {
 	GFCommon::log_debug( __METHOD__ . '(): Original value => ' . $value );
-	$value = preg_replace("/[^-a-zA-Z\\/]/", "", $value );
+	$value = preg_replace("/[^-a-zA-Z \\/]/", "", $value );
 	GFCommon::log_debug( __METHOD__ . '(): Modified value => ' . $value );
 	return $value;
 }
