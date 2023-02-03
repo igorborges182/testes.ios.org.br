@@ -1390,15 +1390,22 @@ add_filter( 'gform_field_validation_13_121', function ( $result, $value, $form, 
 }, 10, 4 );
 
 //function para bloquear os caracteres
-add_filter( 'gform_field_validation_27_23', function( $result, $value, $form, $field ) {
 
-    if ( strpos( $field->cssClass, 'require_alpha_num' ) !== false && ! ctype_alnum( $value ) ) {
- 
-       $result['is_valid'] = false;
-       $result['message'] = 'Por favor utilize apenas números e letras';
- 
-    }
- 
-    return $result;
- 
- }, 10, 4 );
+add_filter( 'gform_field_validation_27_23', 'gf_validate_name', 10, 4 );
+
+function gf_validate_name( $result, $value, $form, $field ) {
+	if ( $field->type != 'name' ) {
+		return $result;
+	}
+	GFCommon::log_debug( __METHOD__ . '(): Name values => ' . print_r( $value, true ) );
+
+	if ( $result['is_valid'] ) {
+		foreach ( $value as $input ) {
+			if ( ! empty ( $input ) && ! preg_match( '/^[\p{L} ]+$/u', $input ) ) {
+				$result['is_valid'] = false;
+				$result['message'] = 'Only letters!';
+			}
+		}
+	}
+	return $result;
+}
