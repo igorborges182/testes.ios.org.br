@@ -1391,7 +1391,7 @@ add_filter( 'gform_field_validation_13_121', function ( $result, $value, $form, 
 
 //function para bloquear os caracteres
 
-add_filter( 'gform_field_validation_27_23', function( $result, $value, $form, $field ) {
+add_filter( 'gform_field_validation_13_23', function( $result, $value, $form, $field ) {
 	$pattern = "/^[a-zA-Z ]*$/"; 
 	if ( strpos( $field->cssClass, 'letras_espacos' ) !== false && ! preg_match( $pattern, $value ) ) {
 		$result['is_valid'] = false;
