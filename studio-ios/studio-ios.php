@@ -1414,7 +1414,8 @@ function aceita_apenas_numeros( $value, $lead, $field, $form ) {
 
 add_filter( 'gform_save_field_value_13_24', 'removerAcentos', 10, 4 );
 function removerAcentos( $value, $lead, $field, $form ) {
-    return $value.normalize('NFD').replace([\u0300-\u036f]/g, "");
+   $value = texto.normalize('NFD').replace([\u0300-\u036f]/g, "");
+   return $value;
 }
 
 
