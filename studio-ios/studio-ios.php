@@ -1410,17 +1410,3 @@ function aceita_apenas_numeros( $value, $lead, $field, $form ) {
 	return $value;
 }
 
-//function para tirar caracteres especiais
-
-add_filter( 'gform_save_field_value_13_24', 'convertacentos', 10, 4 );
-
-function convertacentos($result, $value, $form, $field) {
-
-    $value = str.replace([ÀÁÂÃÄÅ],"A");
-    $value = str.replace([àáâãäå],"a");
-    $value = str.replace([ÈÉÊË],"E");
-    $value = str.replace([Ç],"C");
-    $value = str.replace([ç],"c");
-    return str.replace([a-z],'');
-    return $value;
-}
