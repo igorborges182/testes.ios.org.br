@@ -1399,3 +1399,22 @@ add_filter( 'gform_field_validation_13_23', function( $result, $value, $form, $f
 	}
 	return $result;
 }, 10, 4 );
+
+add_filter( 'gform_field_validation_13_24', function( $result, $value, $form, $field ) {
+	$pattern = "/^[a-zA-Z ]*$/"; 
+	if ( strpos( $field->cssClass, 'letras_espacos' ) !== false && ! preg_match( $pattern, $value ) ) {
+		$result['is_valid'] = false;
+		$result['message'] = 'Não é permitido o uso de caracteres especiais nesse formulário. Caracteres especiais poderão ser sinalizados no uso da acentuação dos nomes e palavras, além de traços e pontos. Exemplos de teclas especiais: ã,ô,ç,í,- e .';
+	}
+	return $result;
+}, 10, 4 );
+
+add_filter( 'gform_field_validation_13_43', function( $result, $value, $form, $field ) {
+	$pattern = "/^[a-zA-Z ]*$/"; 
+	if ( strpos( $field->cssClass, 'letras_espacos' ) !== false && ! preg_match( $pattern, $value ) ) {
+		$result['is_valid'] = false;
+		$result['message'] = 'Não é permitido o uso de caracteres especiais nesse formulário. Caracteres especiais poderão ser sinalizados no uso da acentuação dos nomes e palavras, além de traços e pontos. Exemplos de teclas especiais: ã,ô,ç,í,- e .';
+	}
+	return $result;
+}, 10, 4 );
+
